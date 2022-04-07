@@ -20,7 +20,6 @@
 	burgerItem.addEventListener('click', () => {
 		menu.classList.add('header__nav-active')
 	})
-
 	menuCloseItem.addEventListener('click', () => {
 		menu.classList.remove('header__nav-active')
 	})
