@@ -238,7 +238,7 @@ img {
 /*Intro styles start*/
 .intro {
   min-height: 100vh;
-  background: url(../img/intro.jpg) no-repeat center;
+  background: url(../img/intro-min.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
@@ -771,14 +771,14 @@ img {
     background: rgba(3, 10, 35, 0.9);
     z-index: 10;
     padding: 75px;
-    -webkit-transform: translatex(100%);
-            transform: translatex(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-transition: .2s all linear;
     transition: .2s all linear;
   }
   .header__nav-active {
-    -webkit-transform: translatex(0);
-            transform: translatex(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .header__item {
     width: 100%;
@@ -851,10 +851,11 @@ img {
     margin-bottom: 15px;
   }
   .header {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
   .header__wrapper {
-    padding-top: 8px;
+    padding-top: 5px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

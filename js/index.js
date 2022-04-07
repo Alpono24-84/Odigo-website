@@ -16,13 +16,23 @@
 	const burgerItem = document.querySelector('.burger');
 	const menu = document.querySelector('.header__nav');
 	const menuCloseItem = document.querySelector('.header__nav-close');
-
+	const menuLinks = document.querySelectorAll('.header__link');//-4
 	burgerItem.addEventListener('click', () => {
 		menu.classList.add('header__nav-active')
 	})
 	menuCloseItem.addEventListener('click', () => {
 		menu.classList.remove('header__nav-active')
 	})
+	//-4
+	if (window.innerWidth <= 768) { //измеряем ширину экрана и если она меньше 768 выполняется условие
+		for (let i = 0; i < menuLinks.length; i += 1) {
+			menuLinks[i].addEventListener('click', () => {
+				menu.classList.remove('header__nav-active');
+			});
+		}
+	}
+	//-4
+
 
 }());
 
@@ -30,9 +40,9 @@
 (function () {
 
 	const smoothScroll = function (targetEl, duration) {
-		const headerElHeight = document.querySelector('.header').clientHeight;
+		const headerElHeight = document.querySelector('.header').clientHeight; //можно удалить что бы не учавствовал хедер
 		let target = document.querySelector(targetEl);
-		let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+		let targetPosition = target.getBoundingClientRect().top - headerElHeight; //можно удалить что бы не учавствовал хедер
 		let startPosition = window.pageYOffset;
 		let startTime = null;
 

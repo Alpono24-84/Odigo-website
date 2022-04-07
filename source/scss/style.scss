@@ -127,7 +127,7 @@ text-decoration: none;
 /*Intro styles start*/
 .intro{
 	min-height: 100vh;
-	background: url(../img/intro.jpg) no-repeat center;
+	background: url(../img/intro-min.jpg) no-repeat center;
 	background-size: cover;
 	padding-top: 263px;
 	padding-bottom: 223px;
@@ -566,12 +566,12 @@ margin-bottom: 58px;
 		background: rgba(3, 10, 35, 0.9);
 		z-index: 10;
 		padding: 75px;
-		transform: translatex(100%);//прячем нав 
+		transform: translateX(100%);//прячем нав 
 		transition: .2s all linear;
-
-		&-active{
-			transform: translatex(0);
-		}
+	}
+	.header__nav-active{
+		transform: translateX(0);
+		
 	}
 
 	.header__item{
@@ -646,10 +646,11 @@ margin-bottom: 58px;
 }
 //------------------------!!!
 .header{
-	margin-bottom: 8px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
 }
 .header__wrapper{
-		padding-top: 8px;
+		padding-top: 5px;
 		align-items:center;
 	}
 	.header__burger{
